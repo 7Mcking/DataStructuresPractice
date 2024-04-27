@@ -1,0 +1,53 @@
+
+
+# CLion files
+.idea/
+*.iml
+
+
+# CMake files
+CMakeFiles/
+CMakeScripts/
+_cmake.cmake
+cmake_install.cmake
+/CMakeLists.txt.user
+/CMakeCache.txt
+cmake-build-debug/
+
+# Compilation files
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.out
+
+# GNU Global
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Compiled Dynamic libraries
+*.so*
+*.dylib
+*.dll
+
+# Makefile generated files
+Makefile
+makefile
+Makefile.inc
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
