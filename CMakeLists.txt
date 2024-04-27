@@ -9,4 +9,8 @@ add_executable(Stack main.cpp
         Queue/DoublyLinkedList.cpp
         Queue/DoublyLinkedList.h
         Queue/Queue.cpp
-        Queue/Queue.h)
+        Queue/Queue.h
+        TwoStack/TwoStack.cpp
+        TwoStack/TwoStack.h
+        Queue/newQueue.cpp
+        Queue/newQueue.h)

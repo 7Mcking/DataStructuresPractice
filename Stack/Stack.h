@@ -21,6 +21,7 @@ public:
     int pop();
     int getSize();
     void showStack();
+    Stack sortStack(Stack stack, int size) ;
 };
 
 

@@ -20,6 +20,7 @@ public:
     bool showItems();
     void enqueue(int value);
     int dequeue();
+    void reverseK(Queue & queue, int k);
     ~Queue();
 
 };

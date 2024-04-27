@@ -53,3 +53,24 @@ void Stack::showStack() {
     cout << endl;
 
 }
+
+Stack Stack::sortStack(Stack stack, int size) {
+    Stack tempStack(size);
+
+    while(!stack.isEmpty()) {
+        int temp = stack.pop();
+        cout<< "Temp Element: " << temp << endl;
+        cout<< "Tempstack Before : ";
+        tempStack.showStack();
+        while (!tempStack.isEmpty() && tempStack.getTop() < temp) {
+            stack.push(tempStack.pop());
+            cout<< "Current Mainstack: ";
+            stack.showStack();
+        }
+        tempStack.push(temp);
+        cout<< "Tempstack after : ";
+        tempStack.showStack();
+    }
+    return tempStack;
+
+}

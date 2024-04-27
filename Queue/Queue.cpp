@@ -3,6 +3,7 @@
 //
 
 #include "Queue.h"
+#include "../Stack/Stack.h"
 
 Queue::Queue() {
     numElements = 0;
@@ -48,6 +49,29 @@ Queue::~Queue() {
     while (!isEmpty()){
         dequeue();
     }
+}
+
+void Queue::reverseK(Queue &queue, int k) {
+    if (queue.isEmpty() || k > queue.getSize()){
+        return;
+    }
+
+    Stack stack(k);
+    for (int i = 0; i < k; i++) {
+        stack.push(queue.dequeue());
+    }
+
+    while (!stack.isEmpty()){
+        queue.enqueue(stack.pop());
+    }
+
+    for (int i = 0; i < queue.getSize() - k; i++) {
+        queue.enqueue(queue.dequeue());
+    }
+
+
+
+
 }
 
 
